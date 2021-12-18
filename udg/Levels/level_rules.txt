@@ -1,0 +1,23 @@
+!Secret prefix!
+Height
+Width
+Map
+Target points
+Entrance coordinates
+Exit coordinates
+Player's coordinates (equal to entrance coordinates at start)
+Player's health, points, attack power, defense coefficient, fight state, orientation
+Enemy count
+Coordinates(x, y), move politics, attack politics ("count" rows), health, attack power, fight state, orientation
+Blaster beams count (at start )
+Coordinates(x, y), orientation, damage
+Game state, turn
+
+/*
+  Содержимое файла с сохранением:
+  1) Игровое поле (PlayingField): высота, ширина, целевые очки, координаты входа, выхода, карта
+  2) Игрок (Player): координаты игрока, здоровье, очки, атака, коэффициент защиты, боевое состояние, ориентация
+  3) Враги и лучи бластера (Enemies and BlasterBeams): количество врагов, координаты, здоровье, сила атаки, боевое состояние, ориентация, тип врага (MovePltc, AttackPltc)
+     количество лучей, координаты (x,y), ориентация и урон
+  4) Игра (Game): состояние игры
+*/

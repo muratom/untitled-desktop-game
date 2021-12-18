@@ -1,0 +1,6 @@
+#include "iactionstrategy.h"
+
+ImpactStrategy::ImpactStrategy()
+{
+
+}

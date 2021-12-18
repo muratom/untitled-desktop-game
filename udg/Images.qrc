@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/back_sonic_40x40.png</file>
+        <file>Images/blaster_beam_40x40.png</file>
+        <file>Images/coin40x40.png</file>
+        <file>Images/exit40x40.png</file>
+        <file>Images/floor40x40.png</file>
+        <file>Images/front_sonic_40x40.png</file>
+        <file>Images/health40x40.png</file>
+        <file>Images/lava40x40.png</file>
+        <file>Images/left_darth_vader_40x40.png</file>
+        <file>Images/left_sonic_40x40.png</file>
+        <file>Images/left_stormtrooper_40x40.png</file>
+        <file>Images/right_darth_vader_40x40.png</file>
+        <file>Images/right_sonic_40x40.png</file>
+        <file>Images/right_stormtrooper_40x40.png</file>
+        <file>Images/wall40x40.png</file>
+    </qresource>
+</RCC>

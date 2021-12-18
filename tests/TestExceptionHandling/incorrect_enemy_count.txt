@@ -1,0 +1,34 @@
+Answer_to_the_Ultimate_Question_of_Life,_the_Universe,_and_Everything_is_42
+20
+35
+2
+1 1
+18 33
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+wffffwclffflfffffffffwllllffffffffw
+wffffwffflfffffffffffwllllflffffffw
+wffffwwwwwwwfffffffffwllffflffffffw
+wfffflfffffwfffffffffwllflllffffffw
+wfffflfffffwfffffffffwcfflllffffffw
+wfffflfffffwfffffffffwwwwwwwffffffw
+wfffflfffffhffffffffffffffffffffffw
+wfffflfffffwfffffffffffffffffwwwwww
+wfffflllfffwfffffffffffffffffwfffhw
+wffffffffffwfffffffffffffffffwfwwww
+wffffffffffwfffffffffffffffffwfwffw
+wfffffffffffffffffffwwwwwfffffffffw
+wfffffffffffffffffffwlclwfffffffffw
+wfffffffffffffffffffwlflwfffffffffw
+wwwwwwwwwwffffffffffwlflwfffffffffw
+wcflffffflffffffffffwfffffffffffffw
+wlflflllffffffffffffwfffffffffffffw
+wlffflllllffffffffffwfffffffffffffw
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+1 1
+100 0 50 5 0 1
+-100
+17 16 100 10 0 0 1 1
+11 7 100 20 0 3 0 0
+13 29 100 20 0 2 1 0
+0
+1
