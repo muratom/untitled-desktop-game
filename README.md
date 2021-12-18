@@ -1,2 +1,2 @@
 # untitled-desktop-game
-2D game with using of programming patterns (Qt/C++)
+The simple 2D game with using of OOP and programming patterns (Qt/C++)
