@@ -65,7 +65,7 @@ void TestExceptionHandling::SaveUninitializedGame() {
 
 void TestExceptionHandling::SaveCompletedGame() {
   Game::Game completed_game;
-  completed_game.NewGame("../../../UntitledDesktopGame/tests/TestExceptionHandling/correct_level.txt");
+  completed_game.NewGame("../../../untitled-desktop-game/tests/TestExceptionHandling/correct_level.txt");
   completed_game.SetInGame(false);
   std::shared_ptr<Game::GameSaver> game_saver(new Game::GameSaver(completed_game));
   try {
@@ -76,7 +76,7 @@ void TestExceptionHandling::SaveCompletedGame() {
 }
 
 void TestExceptionHandling::LoadIncorrectHeader() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/incorrect_header.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_header.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {
@@ -85,7 +85,7 @@ void TestExceptionHandling::LoadIncorrectHeader() {
 }
 
 void TestExceptionHandling::LoadIncorrectMiddle() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/incorrect_middle.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_middle.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {
@@ -94,7 +94,7 @@ void TestExceptionHandling::LoadIncorrectMiddle() {
 }
 
 void TestExceptionHandling::LoadIncorrectEnd() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/incorrect_end.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_end.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {
@@ -103,7 +103,7 @@ void TestExceptionHandling::LoadIncorrectEnd() {
  }
 
 void TestExceptionHandling::LoadIncorrectFieldMap() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/incorrect_field_map.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_field_map.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {
@@ -112,7 +112,7 @@ void TestExceptionHandling::LoadIncorrectFieldMap() {
 }
 
 void TestExceptionHandling::LoadNegativeFieldSize() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/negative_field_size.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/negative_field_size.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {
@@ -121,7 +121,7 @@ void TestExceptionHandling::LoadNegativeFieldSize() {
 }
 
 void TestExceptionHandling::LoadZeroFieldSize() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/zero_field_size.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/zero_field_size.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {
@@ -130,7 +130,7 @@ void TestExceptionHandling::LoadZeroFieldSize() {
 }
 
 void TestExceptionHandling::LoadIncorrectPlayerCrd() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/incorrect_player_crd.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_player_crd.txt");
   try {
     game_loader_->Load();
   } catch (Field::BadFieldException& bfe) {
@@ -139,7 +139,7 @@ void TestExceptionHandling::LoadIncorrectPlayerCrd() {
 }
 
 void TestExceptionHandling::LoadIncorrectEnemiesCrd() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/incorrect_enemy_crd.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_enemy_crd.txt");
   try {
     game_loader_->Load();
   } catch (Field::BadFieldException& bfe) {
@@ -148,7 +148,7 @@ void TestExceptionHandling::LoadIncorrectEnemiesCrd() {
 }
 
 void TestExceptionHandling::LoadIncorrectEnemyCount() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "/home/mur/Programing/QtProjects/UntitledDesktopGame/tests/TestExceptionHandling/incorrect_enemy_count.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_enemy_count.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {
@@ -157,7 +157,7 @@ void TestExceptionHandling::LoadIncorrectEnemyCount() {
 }
 
 void TestExceptionHandling::LoadIncorrectEntranceCrd() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/incorrect_entrance_crd.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_entrance_crd.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {
@@ -166,7 +166,7 @@ void TestExceptionHandling::LoadIncorrectEntranceCrd() {
 }
 
 void TestExceptionHandling::LoadIncorrectBlasterBeamCount() {
-  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../UntitledDesktopGame/tests/TestExceptionHandling/incorrect_blaster_beams_count.txt");
+  game_loader_ = std::make_shared<Game::GameLoader>(game_, "../../../untitled-desktop-game/tests/TestExceptionHandling/incorrect_blaster_beams_count.txt");
   try {
     game_loader_->Load();
   } catch (Game::LoadException& le) {

@@ -1,6 +1,7 @@
 #include <QtTest>
 
 #include "Game/game.h"
+#include <string>
 
 class TestGame : public QObject
 {
@@ -27,14 +28,14 @@ TestGame::~TestGame() {}
 
 void TestGame::NewGameInit() {
   Game::Game game;
-  game.NewGame("../../../UntitledDesktopGame/tests/TestPlayingField/correct_level.txt");
+  game.NewGame("../../../untitled-desktop-game/tests/TestGame/correct_level.txt");
   QCOMPARE(game.GetIsInitialized(), true);
   QCOMPARE(game.GetInGame(), true);
 }
 
 void TestGame::LoadGameInit() {
   Game::Game game;
-  game.LoadGame("../../../UntitledDesktopGame/tests/TestPlayingField/correct_level.txt");
+  game.LoadGame("../../../untitled-desktop-game/tests/TestPlayingField/correct_level.txt");
   QCOMPARE(game.GetIsInitialized(), true);
   // Сохранение может содержать игру в
   // QCOMPARE(game.GetInGame(), true);
@@ -42,7 +43,7 @@ void TestGame::LoadGameInit() {
 
 void TestGame::ExitGameNotInit() {
   Game::Game game;
-  game.NewGame("../../../UntitledDesktopGame/tests/TestPlayingField/correct_level.txt");
+  game.NewGame("../../../untitled-desktop-game/tests/TestPlayingField/correct_level.txt");
   game.ExitGame();
   QCOMPARE(game.GetIsInitialized(), false);
   QCOMPARE(game.GetInGame(), false);
@@ -50,14 +51,14 @@ void TestGame::ExitGameNotInit() {
 
 void TestGame::PlayerAliveCase() {
   Game::Game game;
-  game.NewGame("../../../UntitledDesktopGame/tests/TestPlayingField/correct_level.txt");
+  game.NewGame("../../../untitled-desktop-game/tests/TestPlayingField/correct_level.txt");
   QCOMPARE(game.IsPlayerAlive(), true);
   QCOMPARE(game.GetInGame(), true);
 }
 
 void TestGame::PlayerDeadCase() {
   Game::Game game;
-  game.NewGame("../../../UntitledDesktopGame/tests/TestPlayingField/correct_level.txt");
+  game.NewGame("../../../untitled-desktop-game/tests/TestPlayingField/correct_level.txt");
   game.GetPlayer()->SetHealth(0);
   QCOMPARE(game.IsPlayerAlive(), false);
   QCOMPARE(game.GetInGame(), false);
@@ -65,7 +66,7 @@ void TestGame::PlayerDeadCase() {
 
 void TestGame::LevelCompleteCase() {
   Game::Game game;
-  game.NewGame("../../../UntitledDesktopGame/tests/TestPlayingField/correct_level.txt");
+  game.NewGame("../../../untitled-desktop-game/tests/TestPlayingField/correct_level.txt");
   game.GetPlayer()->SetPoints(game.GetTargetPoints());
   game.GetPF()->SetPlayerCoord(game.GetPF()->GetExitCoord());
   QCOMPARE(game.IsLevelComplete(), true);

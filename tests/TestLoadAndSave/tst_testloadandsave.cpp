@@ -47,12 +47,12 @@ TestLoadAndSave::TestLoadAndSave() {}
 TestLoadAndSave::~TestLoadAndSave() {}
 
 void TestLoadAndSave::NewCorrectFile() {
-  bool isNewGame = game->NewGame("../../../UntitledDesktopGame/tests/TestLoadAndSave/correct_level.txt");
+  bool isNewGame = game->NewGame("../../../untitled-desktop-game/tests/TestLoadAndSave/correct_level.txt");
   QCOMPARE(isNewGame, true);
 }
 
 void TestLoadAndSave::NewIncorrectFile() {
-  bool isNewGame = game->NewGame("../../../UntitledDesktopGame/tests/TestLoadAndSave/incorrect_level.txt");
+  bool isNewGame = game->NewGame("../../../untitled-desktop-game/tests/TestLoadAndSave/incorrect_level.txt");
   QCOMPARE(isNewGame, false);
 }
 
@@ -76,17 +76,17 @@ void TestLoadAndSave::SaveCompletedGame() {
 //}
 
 void TestLoadAndSave::LoadCorrectFile() {
-  bool isLoaded = game->LoadGame("../../../UntitledDesktopGame/tests/TestLoadAndSave/correct_level.txt");
+  bool isLoaded = game->LoadGame("../../../untitled-desktop-game/tests/TestLoadAndSave/correct_level.txt");
   QCOMPARE(isLoaded, true);
 }
 
 void TestLoadAndSave::LoadIncorrectHeader() {
-  bool isLoaded = game->LoadGame("../../../UntitledDesktopGame/tests/TestLoadAndSave/incorrect_header.txt");
+  bool isLoaded = game->LoadGame("../../../untitled-desktop-game/tests/TestLoadAndSave/incorrect_header.txt");
   QCOMPARE(isLoaded, false);
 }
 
 void TestLoadAndSave::LoadIncorrectField() {
-  bool isLoaded = game->LoadGame("../../../UntitledDesktopGame/tests/TestLoadAndSave/incorrect_field.txt");
+  bool isLoaded = game->LoadGame("../../../untitled-desktop-game/tests/TestLoadAndSave/incorrect_field.txt");
   QCOMPARE(isLoaded, false);
 }
 

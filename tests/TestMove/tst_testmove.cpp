@@ -36,7 +36,7 @@ TestMove::TestMove() {}
 TestMove::~TestMove() {}
 
 void TestMove::initTestCase() {
-  game_->NewGame("/home/mur/Programing/QtProjects/UntitledDesktopGame/tests/TestMove/test_level.txt");
+  game_->NewGame("../../../untitled-desktop-game/tests/TestMove/test_level.txt");
 }
 
 void TestMove::init() {

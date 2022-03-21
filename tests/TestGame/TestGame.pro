@@ -15,3 +15,5 @@ INCLUDEPATH += ../../udg/
 TEMPLATE = app
 
 SOURCES +=  tst_testgame.cpp
+
+RESOURCES +=

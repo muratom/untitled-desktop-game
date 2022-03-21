@@ -29,7 +29,7 @@ private:
 
 TestPlayingField::TestPlayingField() {
   Game::Game game;
-  game.NewGame("../../../UntitledDesktopGame/tests/TestPlayingField/correct_level.txt");
+  game.NewGame("../../../untitled-desktop-game/tests/TestPlayingField/correct_level.txt");
   // В pf_ хранится корректное поле (его размер 20x35)
   pf_ = game.GetPF();
 }
