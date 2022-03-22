@@ -1,5 +1,5 @@
 #include "gamesaver.h"
-
+#include <QDir>
 namespace Game {
 GameSaver::GameSaver(Game& game)
   : game_(game) {}
@@ -28,7 +28,7 @@ void GameSaver::Save() const {
   std::string date = std::ctime(&now);
   date.pop_back();
   std::replace_if(date.begin(), date.end(), isspace, '_');
-  std::ofstream save_file("/home/mur/Programing/QtProjects/UntitledDesktopGame/udg/SaveLevels/" + date + ".txt");
+  std::ofstream save_file(QDir::currentPath().toStdString() + "/levels/" + date + ".txt");
 
   try {
     // В начало файла добавляется строка для упрощения проверки корректности при загрузке уровня
@@ -152,7 +152,7 @@ void GameSaver::Save() const {
 
   }  catch (...) {
     save_file.close();
-    std::remove(std::string("/home/mur/Programing/QtProjects/UntitledDesktopGame/udg/SaveLevels/" + date).c_str());
+    std::remove(std::string(QDir::currentPath().toStdString() + "/levels/" + date).c_str());
   }
 }
 }
