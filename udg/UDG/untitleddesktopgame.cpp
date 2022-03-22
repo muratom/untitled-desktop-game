@@ -153,7 +153,7 @@ void UntitledDesktopGame::UpdateStatusBar() {
 
 
 void UntitledDesktopGame::NewGame() {
-  QString open_file_name = QFileDialog::getOpenFileName(this, "Choose the level", "/home/mur/Programing/QtProjects/UntitledDesktopGame/udg/Levels");
+  QString open_file_name = QFileDialog::getOpenFileName(this, "Choose the level", QDir::currentPath());
   if (open_file_name.isNull()) {
     qDebug() << "User didn't choose a file";
     return;
@@ -225,7 +225,7 @@ void UntitledDesktopGame::SaveGame() {
 }
 
 void UntitledDesktopGame::LoadGame() {
-  QString open_file_name = QFileDialog::getOpenFileName(this, "Choose the level", "/home/mur/Programing/QtProjects/UntitledDesktopGame/udg/SaveLevels");
+  QString open_file_name = QFileDialog::getOpenFileName(this, "Choose the level", QDir::currentPath());
   if (open_file_name.isNull()) {
     qDebug() << "User didn't choose a file";
     return;
